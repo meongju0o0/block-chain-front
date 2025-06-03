@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import PaperDetail from './pages/PaperDetail';
 import LoginPage from './pages/LoginPage';
 import SubmitPage from './pages/SubmitPage';
+import MyCommentsPage from './pages/MyCommentsPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,9 +14,10 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/paper/:id" element={<PaperDetail />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/paper/:id" element={<PaperDetail />} />
       <Route path="/submit" element={<SubmitPage />} />
+      <Route path="/my-comments" element={<MyCommentsPage />} />
     </Routes>
   </Router>
 );
