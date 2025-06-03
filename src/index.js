@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PaperDetail from './pages/PaperDetail';
+import LoginPage from './pages/LoginPage';
+import SubmitPage from './pages/SubmitPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/paper/:id" element={<PaperDetail />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/submit" element={<SubmitPage />} />
     </Routes>
   </Router>
 );
