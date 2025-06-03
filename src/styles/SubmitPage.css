@@ -1,0 +1,54 @@
+.submit-section {
+  max-width: 800px; /* ✅ 기존보다 넓게 */
+  margin: 5rem auto;
+  background-color: #ffffff;
+  padding: 3rem 3.5rem; /* ✅ 좌우 여유 padding 추가 */
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.submit-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.submit-section input[type="text"],
+.submit-section textarea,
+.submit-section input[type="file"],
+.submit-section button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;  /* ✅ 더 여유 있게 마진 조정 */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.submit-section textarea {
+  height: 180px;
+  resize: none;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit-section input[type="file"] {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.submit-section button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.submit-section button:hover {
+  background-color: #4338ca;
+}
