@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PaperDetail from './pages/PaperDetail';
 import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 import SubmitPage from './pages/SubmitPage';
 import MyCommentsPage from './pages/MyCommentsPage';
 import './index.css';
@@ -15,6 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/signup" element={<SignupPage />} />
       <Route path="/paper/:id" element={<PaperDetail />} />
       <Route path="/submit" element={<SubmitPage />} />
       <Route path="/my-comments" element={<MyCommentsPage />} />

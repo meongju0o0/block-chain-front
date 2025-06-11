@@ -1,24 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import '../styles/Layout.css';
 import '../styles/LoginPage.css';
 
-function LoginPage() {
+function SignupPage() {
   return (
     <div className="layout">
       <Sidebar />
       <main className="container">
         <section className="login-section">
-          <h2>🔐 로그인</h2>
+          <h2>📝 회원가입</h2>
           <input type="text" placeholder="사용자 이름" />
-          <input type="password" placeholder="지갑 주소" />
-          <button>로그인</button>
-          <p className="signup">계정이 없으신가요? <Link to="/signup">회원가입</Link></p>
+          <input type="text" placeholder="지갑 주소" />
+          <button>회원가입</button>
         </section>
       </main>
     </div>
   );
 }
 
-export default LoginPage;
+export default SignupPage;
