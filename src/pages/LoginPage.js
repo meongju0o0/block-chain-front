@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import Sidebar from '../components/Sidebar';
 import '../styles/Layout.css';
 import '../styles/LoginPage.css';
@@ -7,6 +8,7 @@ import '../styles/LoginPage.css';
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [walletAddress, setWalletAddress] = useState('');
+  const { login } = useAuth();
 
   const handleLogin = async () => {
     try {
@@ -21,9 +23,9 @@ function LoginPage() {
 
       if (response.ok) {
         const data = await response.json();
+        login(data);
         alert('로그인 성공!');
         console.log('로그인 결과:', data);
-        // 필요시 localStorage 저장, 페이지 이동 등 처리
       } else {
         alert('로그인 실패: 계정 정보가 일치하지 않습니다.');
       }
