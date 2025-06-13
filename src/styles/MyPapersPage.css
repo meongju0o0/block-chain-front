@@ -13,8 +13,8 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  list-style: none;        /* ✅ 불릿 제거 */
-  padding: 0;              /* ✅ 기본 여백 제거 */
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 

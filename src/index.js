@@ -8,7 +8,7 @@ import PaperDetail from './pages/PaperDetail';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import SubmitPage from './pages/SubmitPage';
-import MyCommentsPage from './pages/MyCommentsPage';
+import MyPapersPage from './pages/MyPapersPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +21,7 @@ root.render(
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/paper/:id" element={<PaperDetail />} />
         <Route path="/submit" element={<SubmitPage />} />
-        <Route path="/my-comments" element={<MyCommentsPage />} />
+        <Route path="/my-papers" element={<MyPapersPage />} />
       </Routes>
     </AuthProvider>
   </Router>
